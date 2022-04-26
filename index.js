@@ -1,45 +1,21 @@
-let element = document.getElementById("main");
-console.log(element);
-element.remove(element);
 
+const newHeader = document.createElement('h1')
+// created a newHeader variable added an 'h1' element
+document.getElementsByTagName('h1')[0]
+newHeader.setAttribute('id','victory')
+newHeader.innerHTML('YOUR-NAME is the champion')
+document.body.appendChild(newHeader)
 
-
-
-
-let newHeader = document.createElement('h1');
 console.log(newHeader);
-document.body.appendChild(newHeader);
-newHeader.setAttribute('victory');
-newHeader.innerText("Jamond is the champion");
-
-// 
-// document.getElementsByTagName('h1');
-// intro.setAttribute(id,"victory");
 
 
 
 
-
-
-// then use element.remove()to remove the elemen
-// ;
-
-// document.getElementsByTagName('h1');
+const oldElement = document.querySelectorAll("main")
+oldElement.remove();
+console.log(oldElement);
 
 
 
-
-
-
-
-
-
-
-
-
-// let newHeader = document.createElement('h1');
-
-// newHeader.id
-
-
-
+// MAYBE USE ANOTHER METHOD TO REMOVE A JavaScript Tag element.remove()
+// Or use removeChild() 
